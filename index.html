@@ -14,12 +14,14 @@
 <body>
     <div>
         <img class="logo" src="archilyas-logo.png" alt="logo">
-        <p class="p-1">Architect. Designer. Visualizator</p>
+        <p><span class="p-1">Architect.</span> <span class="p-2">Designer.</span> <span class="p-3">Visualizator</span></p>
     </div>
 
     <script>
         gsap.from('.logo',{ y:-100, opacity:0, duration:1})
         gsap.from('.p-1',{ opacity:0,  delay:1})
+        gsap.from('.p-2',{opacity:0,delay:2})
+        gsap.from('.p-3',{opacity:0,delay:3})
     </script> 
 
     
