@@ -1,63 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
 
-body{
-    margin: 0;
-    padding: 0;
-    
+body {
+  margin: 0;
+  padding: 0;
 }
 
-div{
-    margin-top:-1px;
-    padding:0;
-    background-color: #2a2a2a;
-    height:347px
+div {
+  margin-top: -1px;
+  padding: 0;
+  background-color: #2a2a2a;
+  height: 347px;
 }
 
-
-img{
-    display: block;
-    margin: auto;
-    margin-top:1px;
-    width:360px;
+img {
+  display: block;
+  margin: auto;
+  margin-top: 1px;
+  width: 360px;
 }
 
-p{
-    color: #2a2a2a;
-    font-size: 30px;
-    font-family: 'Days One', sans-serif;
-    text-align: center;
-    margin-top: -120px;
-    background: rgb(202, 164, 61);
-    
+p {
+  color: #2a2a2a;
+  font-size: 30px;
+  font-family: "Days One", sans-serif;
+  text-align: center;
+  margin-top: -120px;
+  background: rgb(202, 164, 61);
 }
 
-@media screen and (max-width: 1024px){
-    img{
-        width:284px;
-    }
+@media screen and (max-width: 1024px) {
+  img {
+    width: 284px;
+  }
 
-    p{
-        font-size: 25px;
-        margin-top: -90px;
-    }
+  p {
+    font-size: 25px;
+    margin-top: -90px;
+  }
 
-    div{
-        height:280px;
-
-    }
+  div {
+    height: 280px;
+  }
 }
 
-@media screen and (max-width:748px){
-    img{
-        width:180px;
-    }
+@media screen and (max-width: 748px) {
+  img {
+    width: 180px;
+  }
 
-    p{
-        margin-top: -50px;
-        font-size: 18px;
-    }
+  p {
+    margin-top: -50px;
+    font-size: 18px;
+  }
 
-    div{
-        height:190px;
-    }
+  div {
+    height: 190px;
+  }
 }
