@@ -13,6 +13,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
+    <nav id="navbar">
+      <a href="#" class="lg"><img src="archilyas-logo.png" alt="archilyas-logo"></a>
+      <ul>
+        <li><a href="#">Ana Səhifə</a></li>
+        <li><a href="#">Haqqımda</a></li>
+        <li><a href="#">Proyektlər</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Əlaqə</a></li>
+      </ul>
+    </nav>
     <div>
       <img class="logo" src="archilyas-logo.png" alt="logo" />
       <p>
@@ -21,6 +31,15 @@
         <span class="p-3">Visualizator</span>
       </p>
     </div>
+    <section>
+      <div></div>
+    </section>
+    <section>
+      <div></div>
+    </section>
+    <section>
+      <div></div>
+    </section>
     <section>
       <div></div>
     </section>
@@ -35,18 +54,31 @@
       /* Scroll to top button code */
       $(document).ready(function(){
     
-    $(window).scroll(function(){
-        if($(this).scrollTop()>40){
-            $('#topBtn').fadeIn();
-        } else{
-            $('#topBtn').fadeOut();
-        }
-    });
+        $(window).scroll(function(){
+            if($(this).scrollTop()>100){
+                $('#topBtn').fadeIn();
+            } else{
+                $('#topBtn').fadeOut();
+            }
+        });
     
-    $('#topBtn').click(function(){
-        $('html,body').animate({scrollTop:0},800);
-    });
-});
+        $('#topBtn').click(function(){
+            $('html,body').animate({scrollTop:0},800);
+        });
+      });
+
+      /* scroll down animation */
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+      } 
+
+
     </script>
   </body>
 </html>
