@@ -8,21 +8,45 @@
     <link rel="icon" href="favicon.png" type="image/x-icon"/>
     <script src="animation.js"></script>
     <script src="gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8a349f80db.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
     <div>
       <img class="logo" src="archilyas-logo.png" alt="logo" />
       <p>
-        <span class="p-1">Architect.</span> <span class="p-2">Designer.</span>
+        <span class="p-1">Architect.</span>
+        <span class="p-2">Designer.</span>
         <span class="p-3">Visualizator</span>
       </p>
     </div>
-
+    <section>
+      <div></div>
+    </section>
+    <button id="topBtn"><i class="fa-solid fa-arrow-up"></i></button>
     <script>
-      gsap.from(".logo", { y: -100, opacity: 0, duration: 1 });
+      gsap.from(".logo", { y: -200, opacity: 0, duration: 1 });
       gsap.from(".p-1", { opacity: 0, delay: 1 });
       gsap.from(".p-2", { opacity: 0, delay: 2 });
       gsap.from(".p-3", { opacity: 0, delay: 3 });
+
+
+      /* Scroll to top button code */
+      $(document).ready(function(){
+    
+    $(window).scroll(function(){
+        if($(this).scrollTop()>40){
+            $('#topBtn').fadeIn();
+        } else{
+            $('#topBtn').fadeOut();
+        }
+    });
+    
+    $('#topBtn').click(function(){
+        $('html,body').animate({scrollTop:0},800);
+    });
+});
     </script>
   </body>
 </html>

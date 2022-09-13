@@ -3,20 +3,25 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #2a2a2a;
+  color: aliceblue;
 }
 
-div {
-  margin-top: -1px;
+div{
+  margin-top:-1px;
   padding: 0;
-  background-color: #2a2a2a;
   height: 347px;
+}
+
+section>div{
+   background: radial-gradient(circle, rgb(202, 164, 61) 0%, rgba(42,42,42,1) 100%); 
 }
 
 img {
   display: block;
   margin: auto;
   margin-top: 1px;
-  width: 360px;
+  width: 347px;
 }
 
 p {
@@ -26,7 +31,29 @@ p {
   text-align: center;
   margin-top: -120px;
   background: rgb(202, 164, 61);
+  background: radial-gradient(circle, rgb(202, 164, 61) 0%, rgba(42,42,42,1) 100%);
 }
+
+
+#topBtn{
+  position: fixed;
+  bottom:40px;
+  right:40px;
+  width:50px;
+  height:50px;
+  font-size: 22px;
+  background:rgb(202, 164, 61) ;
+  border:none;
+  cursor:pointer;
+  color:#2a2a2a;
+  border-radius: 12px;
+}
+#topBtn:hover{
+  background:#494949;
+  color:rgb(202, 164, 61);
+  box-shadow:  5px 10px 10px rgba(0, 0, 0, 0.3) ;
+}
+
 
 @media screen and (max-width: 1024px) {
   img {
