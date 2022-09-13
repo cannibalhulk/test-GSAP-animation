@@ -92,7 +92,7 @@ p {
   color:#2a2a2a;
   border-radius: 12px;
 }
-#topBtn:checked{
+#topBtn:active{
   background:#494949;
   color:rgb(202, 164, 61);
   box-shadow:  5px 10px 10px rgba(0, 0, 0, 0.3) ;
