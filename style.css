@@ -53,7 +53,6 @@ ul li a{
   background: none;
   outline: none;
   border:none;
-  left: 300px;
 }
 
 .hamburger .bar,.hamburger:after, .hamburger:before{
@@ -183,5 +182,11 @@ p {
 
   nav ul {
     display: none;
+  }
+}
+
+@media screen and (min-width: 300px){
+  .hamburger{
+    margin-left: 240px;
   }
 }
