@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az-AZ">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,22 +11,34 @@
     <script src="https://kit.fontawesome.com/8a349f80db.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+    />
+
   </head>
   <body>
-    <nav id="navbar">
-      <a href="#" class="lg"><img src="archilyas-logo.png" alt="archilyas-logo"></a>
-      <ul>
-        <li><a href="#">Ana Səhifə</a></li>
-        <li><a href="#">Haqqımda</a></li>
-        <li><a href="#">Proyektlər</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Əlaqə</a></li>
-      </ul>
-      <button class="hamburger">
-        <div class="bar"></div>
+    <nav id="navbar" class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons">menu</span>
       </button>
+      <!-- <h1 class="navbar-title">Awards</h1> -->
+      <img src="../archilyas-logo.png" alt="logo">
+      <nav class="navbar-menu">
+        <button type="button" class="active">Ana Səhifə</button>
+        <button type="button">Haqqımda</button>
+        <button type="button">Proyektlər</button>
+        <button type="button">Blog</button>
+        <button class="contact-me" type="button">Əlaqə</button>
+      </nav>
     </nav>
-    <div>
+    <div class="welcome">
       <img class="logo" src="archilyas-logo.png" alt="logo" />
       <p>
         <span class="p-1">Architect.</span>
@@ -81,7 +93,7 @@
         }
       } 
 
-
+      const toggleMenuOpen = () => document.body.classList.toggle("open");
     </script>
   </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="./navbar.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons">menu</span>
+      </button>
+      <!-- <h1 class="navbar-title">Awards</h1> -->
+      <img src="../archilyas-logo.png" alt="logo">
+      <nav class="navbar-menu">
+        <button type="button" class="active">Ana Səhifə</button>
+        <button type="button">Haqqımda</button>
+        <button type="button">Proyektlər</button>
+        <button type="button">Blog</button>
+        <button class="contact-me" type="button">Əlaqə</button>
+      </nav>
+    </nav>
+    <script type="text/javascript" src="./navbar.js"></script>
+  </body>
+</html>
