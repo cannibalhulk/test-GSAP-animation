@@ -11,8 +11,8 @@
   justify-content: center;
   width: 100%;
   height: 80px;
-  background: linear-gradient(180deg, #2A2A2A 0%, #343535 100%);
-  box-shadow:  0px 5px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(180deg, #2A2A2A 0%, #343535 100%);;
+  box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.6);
   color: #f9f9f9;
   font-family: "Poppins";
   box-sizing: border-box;
@@ -42,11 +42,11 @@ section>div{
 .logo {
   display: block;
   margin: auto;
-  margin-top: 1px;
+  margin-top: -21px;
   width: 347px;
 }
 
-p {
+p.who {
   color: #2a2a2a;
   font-size: 30px;
   font-family: "Days One", sans-serif;
@@ -77,34 +77,93 @@ p {
   box-shadow:  5px 10px 10px rgba(0, 0, 0, 0.3) ;
 }
 
+.welcome{
+  transition: 0.3s ease-in;
+}
+
+.welcome-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome-flex a{
+  text-decoration: none;
+  color: unset;
+}
+
+.welcome-flex p{
+  margin-top: 120px;
+  font-family: 'Open Sans',sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #898989;
+  transition: 0.3s ease-in-out;
+}
+
+.welcome-flex p:hover{
+  color: rgb(168, 138, 55);
+  text-shadow: 1px 0px #8d7833;
+}
+
+.welcome-flex p i{
+  margin-right: 10px;
+}
+
+.welcome-flex p:first-child{
+  margin-left: 12%;
+}
+.welcome-flex p:last-child{
+  margin-right: 12%;
+}
 
 @media screen and (max-width: 1024px) {
-  img {
-    width: 284px;
+  .welcome-flex p:first-child{
+    margin-top: 74px;
+    margin-left: 50px;
   }
 
-  p {
+  .welcome-flex p:last-child{
+    margin-top: 74px;
+    margin-right: 50px;
+  }
+
+  .logo{
+    display: block;
+    width: 40px;
+  }
+
+  .logo {
+    width: 254px;
+  }
+
+  p.who {
     font-size: 25px;
-    margin-top: -120px;
+    margin-top: -74px;
   }
 
   .welcome {
-    height: 310px;
+    height: 235px;
   }
 }
 
-@media screen and (max-width: 748px) {
-  .logo {
-    width: 180px;
+@media screen and (max-width: 768px) {
+  .logo{
+    margin-top: 1px;
+    width: 200px;
   }
 
-  p {
-    margin-top: -50px;
+  .welcome-flex > p{
+    margin-bottom: 80px;
+    display: none;
+  }
+
+  p.who {
     font-size: 18px;
+    margin-top: -55px;
   }
 
   .welcome {
-    height: 190px;
+    height: 200px;
   }
 
   #topBtn{
@@ -112,6 +171,8 @@ p {
     height:42px;
   }
 }
+
+
 * {
   box-sizing: border-box;
 }
